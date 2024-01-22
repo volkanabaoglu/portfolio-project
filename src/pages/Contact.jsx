@@ -20,15 +20,12 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Form verilerini kullan
     console.log(formData);
-    // İşlemleri buraya ekleyebilirsin, örneğin API'ye gönderme
+    // send to api in this section
   };
   return (
     <div>
       <NavbarComponent />
-      <br />
-      <br />
       <br />
       <br />
       <div className="form-contact">
