@@ -8,7 +8,7 @@ const NavbarComponent = () => {
     <div>
       <Navbar bg="none" data-bs-theme="dark">
         <Container>
-          <Navbar.Brand style={{fontSize:'30px'}}>VOLKAN ABAOĞLU</Navbar.Brand>
+          <Navbar.Brand style={{fontSize:'30px'}}>VOLKAN ABAOGLU</Navbar.Brand>
           <Nav className="ml-auto" style={{ marginRight: '0px',  
         padding:'20px', fontSize:'25px' , gap:'30px' }}>
             <Nav.Link href="/">Home</Nav.Link>
