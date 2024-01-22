@@ -8,9 +8,9 @@ const NavbarComponent = () => {
     <div>
       <Navbar bg="none" data-bs-theme="dark">
         <Container>
-          <Navbar.Brand style={{fontSize:'25px'}}>VOLKAN ABAOĞLU</Navbar.Brand>
-          <Nav className="ml-auto" style={{ marginRight: '30px', 
-        padding:'10px', fontSize:'25px' }}>
+          <Navbar.Brand style={{fontSize:'30px'}}>VOLKAN ABAOĞLU</Navbar.Brand>
+          <Nav className="ml-auto" style={{ marginRight: '0px',  
+        padding:'20px', fontSize:'25px' , gap:'30px' }}>
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="about">About Me</Nav.Link>
             <Nav.Link href="skills">Skills</Nav.Link>
