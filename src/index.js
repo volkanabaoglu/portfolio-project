@@ -8,6 +8,7 @@ import NoPage from "./pages/NoPage";
 import Contact from "./pages/Contact";
 import Skills from "./pages/Skills";
 import AboutMe from "./pages/AboutMe";
+import "./Index.css"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -17,7 +18,6 @@ root.render(
           <Route path="/" element={<Home />} />
           <Route path="projects" element={<Projects />} />
           <Route path="contact" element={<Contact />} />
-          <Route path="Contact" element={<Contact />} />
           <Route path="aboutme" element={<AboutMe />} />
           <Route path="skills" element={<Skills />} />
           <Route path="*" element={<NoPage />} />
@@ -26,7 +26,4 @@ root.render(
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();

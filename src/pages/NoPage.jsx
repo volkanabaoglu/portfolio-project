@@ -1,8 +1,10 @@
 import React from 'react'
-
+import  NavbarComponent  from '../components/Navbar.jsx'
 const NoPage = () => {
   return (
-    <div>NoPage</div>
+    <div>
+        <NavbarComponent />
+    </div>
   )
 }
 

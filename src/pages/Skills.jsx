@@ -1,8 +1,10 @@
 import React from 'react'
-
+import  NavbarComponent  from '../components/Navbar.jsx'
 const Skills = () => {
   return (
-    <div>Skills</div>
+    <div>
+        <NavbarComponent />
+    </div>
   )
 }
 
