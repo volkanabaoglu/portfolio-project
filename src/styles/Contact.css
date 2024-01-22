@@ -1,0 +1,17 @@
+.form-contact {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  max-width: 800px; /* Formun maksimum genişliğini belirle */
+  margin: auto;
+  margin-top: 30px;
+}
+
+.form-contact form {
+  width: 100%; /* Formun genişliğini %100 yap */
+}
+
+.contact-button{
+  padding-top: 30px;
+}
