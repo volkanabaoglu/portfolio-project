@@ -6,7 +6,7 @@ import Navbar from "react-bootstrap/Navbar";
 const NavbarComponent = () => {
   return (
     <div>
-      <Navbar bg="dark" data-bs-theme="dark">
+      <Navbar bg="none" data-bs-theme="dark">
         <Container>
           <Navbar.Brand style={{fontSize:'25px'}}>VOLKAN ABAOĞLU</Navbar.Brand>
           <Nav className="ml-auto" style={{ marginRight: '30px', 
