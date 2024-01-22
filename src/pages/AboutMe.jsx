@@ -36,8 +36,19 @@ const AboutMe = () => {
             skills.
           </p>
         </div>
-        <Button variant="dark" onClick={downloadCV} className="mx-auto" style={{fontSize:'35px',backgroundColor:'whitesmoke',color:'darkblue'}}>
-          Download CV
+        <Button
+          variant="dark"
+          onClick={downloadCV}
+          className="mx-auto"
+          style={{
+            fontSize: "35px",
+            backgroundColor: "whitesmoke",
+            color: "darkblue",
+          }}
+          onMouseEnter={(e) => (e.target.style.backgroundColor = "whitesmoke")}
+          onMouseLeave={(e) => (e.target.style.backgroundColor = "lightgray")}
+        >
+          DOWNLOAD CV
         </Button>
       </div>
     </>
