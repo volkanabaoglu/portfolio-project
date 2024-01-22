@@ -1,0 +1,25 @@
+.aboutme-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.aboutme-p {
+    max-width: 1200px; /* Yazı alanının maksimum genişliğini belirle */
+    margin: 0 auto;   /* Yazı alanını ortala */
+    padding: 20px;    /* Yazı alanına iç boşluk ekle */
+     /* Yazı alanına arka plan rengi ekle */
+    border-radius: 10px; /* Yazı alanına kenar yuvarlaklığı ekle */
+  }
+  
+  .aboutme-p p {
+    color: white; /* Yazı rengini beyaz yap */
+    font-size: 24px; /* Yazı font boyutunu ayarla */
+    line-height: 2; /* Satır yüksekliğini ayarla */
+  }
+  .mx-auto{
+    margin-top: 80px;
+    
+  }
+  
+ 
