@@ -12,7 +12,6 @@ const Skills = () => {
     { technology: 'JQuery', percentage: 80 },
     { technology: 'Java', percentage: 60 },
     { technology: 'Sql', percentage: 50 },
-    
   ];
 
   return (

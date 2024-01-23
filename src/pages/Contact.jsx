@@ -21,6 +21,8 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
+    setFormData({name:'',email:'',message:''});
+    alert("Message didn't send. (This field is still under development !)")
     // send to api in this section
   };
   return (
@@ -35,6 +37,7 @@ const Contact = () => {
             <Form.Control style={{padding:'20px'}}
               type="text"
               placeholder="Enter your name"
+              required
               name="name"
               value={formData.name}
               onChange={handleChange}
@@ -46,6 +49,7 @@ const Contact = () => {
             <Form.Control style={{padding:'20px'}}
               type="email"
               placeholder="Enter your email"
+              required
               name="email"
               value={formData.email}
               onChange={handleChange}
@@ -59,6 +63,7 @@ const Contact = () => {
               rows={3}
               placeholder="Type your message here"
               name="message"
+              required
               value={formData.message}
               onChange={handleChange}
             />
