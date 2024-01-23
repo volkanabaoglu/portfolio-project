@@ -31,7 +31,7 @@ const Projects = () => {
             border: "solid 1px gray",
           }}
         >
-          <Card.Body style={{filter: isHovered ? 'brightness(180%)' : 'brightness(80%)',transition: 'filter 0.3s ease-in-out'}} onMouseEnter={handleMouseEnter}
+          <Card.Body style={{filter: isHovered ? 'brightness(180%)' : 'brightness(100%)',transition: 'filter 0.3s ease-in-out'}} onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}>
             <Card.Title style={{ color: "#c0bebe" }}>
               E-Commerce Platform
@@ -59,7 +59,7 @@ const Projects = () => {
             border: "solid 1px gray",
           }}
         >
-          <Card.Body style={{filter: isHovered ? 'brightness(180%)' : 'brightness(80%)',transition: 'filter 0.3s ease-in-out'}} onMouseEnter={handleMouseEnter}
+          <Card.Body style={{filter: isHovered ? 'brightness(180%)' : 'brightness(100%)',transition: 'filter 0.3s ease-in-out'}} onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}>
             <Card.Title style={{ color: "#c0bebe"}}>Rent A Car</Card.Title>
             <br />
@@ -85,7 +85,7 @@ const Projects = () => {
             border: "solid 1px gray",
           }}
         >
-          <Card.Body style={{filter: isHovered ? 'brightness(180%)' : 'brightness(80%)',transition: 'filter 0.3s ease-in-out'}} onMouseEnter={handleMouseEnter}
+          <Card.Body style={{filter: isHovered ? 'brightness(180%)' : 'brightness(100%)',transition: 'filter 0.3s ease-in-out'}} onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}>
             <Card.Title style={{ color: "#c0bebe" }}>Mekanbul</Card.Title>
             <br />
