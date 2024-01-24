@@ -51,4 +51,17 @@ body {
   }
 }
 
+/* Responsive Tasarım */
+@media screen and (max-width: 768px) {
+  .home-container {
+    padding: 30px;
+  }
 
+  .name {
+    font-size: 40px;
+  }
+
+  .developer-title {
+    font-size: 30px;
+  }
+}

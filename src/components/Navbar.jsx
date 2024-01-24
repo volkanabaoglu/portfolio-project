@@ -1,22 +1,33 @@
-import React from "react";
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
+import React, { useState } from "react";
+import { Navbar, Container, Nav } from "react-bootstrap";
+import NavbarToggle from "react-bootstrap/NavbarToggle";
+import NavbarCollapse from "react-bootstrap/NavbarCollapse";
+import "../styles/NavbarComponent.css";
 
 const NavbarComponent = () => {
+  const [expanded, setExpanded] = useState(false);
+
+  const handleNavClose = () => {
+    setExpanded(false);
+  };
+
   return (
     <div>
-      <Navbar bg="none" data-bs-theme="dark">
+      <Navbar bg="none" variant="dark" expand="lg" expanded={expanded} collapseOnSelect>
         <Container>
-          <Navbar.Brand style={{fontSize:'30px'}}>VOLKAN ABAOGLU</Navbar.Brand>
-          <Nav className="ml-auto" style={{ marginRight: '0px',  
-        padding:'20px', fontSize:'25px' , gap:'30px' }}>
-            <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="about">About Me</Nav.Link>
-            <Nav.Link href="skills">Skills</Nav.Link>
-            <Nav.Link href="projects">Projects</Nav.Link>
-            <Nav.Link href="contact">Contact</Nav.Link>
-          </Nav>
+          <Navbar.Brand style={{ fontSize: '30px' , fontFamily:'Cursive' }}>VOLKAN ABAOGLU</Navbar.Brand>
+
+          <NavbarToggle aria-controls="basic-navbar-nav" onClick={() => setExpanded(!expanded)} />
+
+          <NavbarCollapse id="basic-navbar-nav">
+            <Nav className="ml-auto" style={{ marginRight: '0px', padding: '20px', fontSize: '25px', gap: '30px' }}>
+              <Nav.Link href="/" onClick={handleNavClose}>Home</Nav.Link>
+              <Nav.Link href="about" onClick={handleNavClose}>About Me</Nav.Link>
+              <Nav.Link href="skills" onClick={handleNavClose}>Skills</Nav.Link>
+              <Nav.Link href="projects" onClick={handleNavClose}>Projects</Nav.Link>
+              <Nav.Link href="contact" onClick={handleNavClose}>Contact</Nav.Link>
+            </Nav>
+          </NavbarCollapse>
         </Container>
       </Navbar>
     </div>

@@ -29,8 +29,8 @@ const Home = () => {
             borderRadius: "90%", 
             marginBottom: "20px", 
             border: 'solid 1px gray',
-            filter: isHovered ? 'brightness(120%)' : 'brightness(100%)', // Apply brightness based on hover state
-            transition: 'filter 0.3s ease-in-out', // Add a smooth transition effect
+            filter: isHovered ? 'brightness(120%)' : 'brightness(100%)',
+            transition: 'filter 0.3s ease-in-out',
           }}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
