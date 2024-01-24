@@ -4,7 +4,7 @@
     width: 100%;
   }
   .col-md-4 {
-    margin-top: 15px;
+    margin-top: 10px;
   }
 }
 
@@ -33,9 +33,9 @@
 
 .aboutme-p p {
   color: white; 
-  font-size: 24px; 
+  font-size: 20px; 
   line-height: 1.6; 
 }
 .mx-auto {
-  margin-top: 20px;
+  margin-top: 15px;
 }

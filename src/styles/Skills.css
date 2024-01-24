@@ -1,10 +1,12 @@
-.skills-main{
-    overflow-y: auto;
-    max-height: 100vh;
+.container-class {
+  overflow-y: auto;
+  max-height: 100vh; 
 }
 
 @media screen and (max-width: 768px) {
-    .my-skills {
-      font-size: 20px;
-    }
+  .my-skills {
+      font-size: 18px;
   }
+}
+
+

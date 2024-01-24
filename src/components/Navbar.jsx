@@ -43,6 +43,7 @@ const NavbarComponent = () => {
               <Nav.Link href="about" onClick={handleNavClose}>AboutMe</Nav.Link>
               <Nav.Link href="skills" onClick={handleNavClose}>Skills</Nav.Link>
               <Nav.Link href="projects" onClick={handleNavClose}>Projects</Nav.Link>
+              <Nav.Link href="contact" onClick={handleNavClose}>Contact</Nav.Link>
               <Nav.Link href="/" onClick={downloadCV}>My CV</Nav.Link>
             </Nav>
             )}

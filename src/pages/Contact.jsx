@@ -26,7 +26,7 @@ const Contact = () => {
     // send to api in this section
   };
   return (
-    <div>
+    <div className="contact-main">
       <NavbarComponent />
       <br />
       <br />
@@ -68,7 +68,7 @@ const Contact = () => {
               onChange={handleChange}
             />
           </Form.Group>
-          <Button variant="primary" type="submit" style={{fontSize:'24px' , padding:'10px',marginTop:'40px',width:'150px'}}>
+          <Button variant="primary" type="submit" style={{fontSize:'24px' , padding:'10px',marginTop:'30px',width:'120px'}}>
             Send
           </Button>
         </Form>

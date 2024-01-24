@@ -17,26 +17,24 @@ const Skills = () => {
   return (
     <div className="skills-main">
       <NavbarComponent />
-      <Container className="mt-5">
-        <h2 className="my-skills" style={{ color: "white", fontSize: "25px" }}>
+      <Container className="container-class mt-5">
+        <h2 className="my-skills" style={{ color: "white", fontSize: "22px" , paddingBottom:'10px' }}>
           My Skills
         </h2>
-        <br />
-        <br />
         <Row className="mx-auto">
           {skillsData.map((skill, index) => (
             <Col key={index} xs={12} sm={6} md={4} className="mb-3" style={{paddingTop:'15px'}}>
               <div className="skill-item">
                 <h4
                   className="skill-name"
-                  style={{ color:'whitesmoke', fontSize: "25px" }}
+                  style={{ color:'whitesmoke', fontSize: "22px" }}
                 >
                   {skill.technology}
                 </h4>
                 <ProgressBar
                   now={skill.percentage}
                   label={`${skill.percentage}%`}
-                  style={{ fontSize: "20px" }}
+                  style={{ fontSize: "20px" , width:'400px' }}
                 />
               </div>
             </Col>
