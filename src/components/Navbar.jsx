@@ -35,7 +35,7 @@ const NavbarComponent = () => {
               <Nav.Link href="skills" onClick={handleNavClose}>Skills</Nav.Link>
               <Nav.Link href="projects" onClick={handleNavClose}>Projects</Nav.Link>
               <Nav.Link href="contact" onClick={handleNavClose}>Contact</Nav.Link>
-              <Nav.Link href="contact" onClick={handleNavClose}>Contact</Nav.Link>
+              <Nav.Link href="/" onClick={downloadCV}>My CV</Nav.Link>
             </Nav>
             )   : (
               <Nav className="ml-auto" style={{ marginRight: '0px',marginLeft:'350px', padding: '15px', fontSize: '20px', gap: '50px' , alignItems:'center',justifyContent:'center'}}>
@@ -43,7 +43,7 @@ const NavbarComponent = () => {
               <Nav.Link href="about" onClick={handleNavClose}>AboutMe</Nav.Link>
               <Nav.Link href="skills" onClick={handleNavClose}>Skills</Nav.Link>
               <Nav.Link href="projects" onClick={handleNavClose}>Projects</Nav.Link>
-              <Nav.Link href="/" onClick={downloadCV}>Download CV</Nav.Link>
+              <Nav.Link href="/" onClick={downloadCV}>My CV</Nav.Link>
             </Nav>
             )}
           </NavbarCollapse>
