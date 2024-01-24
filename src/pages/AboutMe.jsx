@@ -1,23 +1,15 @@
 import React from "react";
 import NavbarComponent from "../components/Navbar.jsx";
 import "../styles/AboutMe.css";
-import Button from "react-bootstrap/Button";
 
 const AboutMe = () => {
-  const downloadCV = () => {
-    const cvPath = "volkanabaoglu-cv.pdf";
-    const link = document.createElement("a");
-    link.href = cvPath;
-    link.download = "volkanabaoglu-cv.pdf";
-    link.click();
-  };
+  
 
   return (
-    <>
+    <div className="aboutme-fullpage">
       <NavbarComponent />
-      <div className="aboutme-container">        
-
-        <div className="aboutme-p">
+      <div className="aboutme-container">
+        <div className="aboutme-p col-md-8">
           <p>
             Hello, I'm Volkan, a senior computer engineering student at Süleyman
             Demirel University. My passion lies in web development, automation
@@ -45,22 +37,8 @@ const AboutMe = () => {
             programming.
           </p>
         </div>
-        <Button
-          variant="dark"
-          onClick={downloadCV}
-          className="mx-auto"
-          style={{
-            fontSize: "35px",
-            backgroundColor: "whitesmoke",
-            color: "darkblue",
-          }}
-          onMouseEnter={(e) => (e.target.style.backgroundColor = "whitesmoke")}
-          onMouseLeave={(e) => (e.target.style.backgroundColor = "lightgray")}
-        >
-          DOWNLOAD CV
-        </Button>
       </div>
-    </>
+    </div>
   );
 };
 

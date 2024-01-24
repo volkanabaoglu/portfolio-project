@@ -1,33 +1,43 @@
-import React from 'react';
-import { Container, Row, Col, ProgressBar } from 'react-bootstrap';
-import NavbarComponent from '../components/Navbar.jsx';
+import React from "react";
+import { Container, Row, Col, ProgressBar } from "react-bootstrap";
+import NavbarComponent from "../components/Navbar.jsx";
 
 const Skills = () => {
   const skillsData = [
-    { technology: 'Html', percentage: 80 },
-    { technology: 'Css', percentage: 80 },
-    { technology: 'React', percentage: 75 },
-    { technology: 'Node.js', percentage: 70 },
-    { technology: 'MongoDB', percentage: 65 },
-    { technology: 'JQuery', percentage: 80 },
-    { technology: 'Java', percentage: 60 },
-    { technology: 'Sql', percentage: 50 },
+    { technology: "Html", percentage: 80 },
+    { technology: "Css", percentage: 80 },
+    { technology: "React", percentage: 75 },
+    { technology: "Node.js", percentage: 70 },
+    { technology: "MongoDB", percentage: 65 },
+    { technology: "JQuery", percentage: 80 },
+    { technology: "Java", percentage: 60 },
+    { technology: "Sql", percentage: 50 },
   ];
 
   return (
-    <div>
+    <div className="skills-main">
       <NavbarComponent />
       <Container className="mt-5">
-        <h2 className='my-skills' style={{color:'white',fontSize:'40px'}}>My Skills</h2>
-        <br /><br />
-        <Row>
+        <h2 className="my-skills" style={{ color: "white", fontSize: "25px" }}>
+          My Skills
+        </h2>
+        <br />
+        <br />
+        <Row className="mx-auto">
           {skillsData.map((skill, index) => (
-            <Col key={index} md={6} lg={4} className="mb-4">
-             
+            <Col key={index} xs={12} sm={6} md={4} className="mb-3" style={{paddingTop:'15px'}}>
               <div className="skill-item">
-              <br /> <br />
-                <h4 className='skill-name' style={{color:'white',fontSize:'30px'}}>{skill.technology}</h4>
-                <ProgressBar now={skill.percentage} label={`${skill.percentage}%`} style={{fontSize:'20px'}}  />
+                <h4
+                  className="skill-name"
+                  style={{ color:'whitesmoke', fontSize: "25px" }}
+                >
+                  {skill.technology}
+                </h4>
+                <ProgressBar
+                  now={skill.percentage}
+                  label={`${skill.percentage}%`}
+                  style={{ fontSize: "20px" }}
+                />
               </div>
             </Col>
           ))}

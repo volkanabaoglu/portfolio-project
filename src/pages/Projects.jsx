@@ -22,7 +22,7 @@ const Projects = () => {
       <br />
 
       <div className="cards-projects">
-        <Card
+        <Card className="col-md-4 mb-4"
           style={{
             width: "20rem",
             height: "25rem",
@@ -50,7 +50,7 @@ const Projects = () => {
           </Card.Body>
         </Card>
 
-        <Card
+        <Card className="col-md-4 mb-4"
           style={{
             width: "20rem",
             height: "25rem",
@@ -76,7 +76,7 @@ const Projects = () => {
           </Card.Body>
         </Card>
 
-        <Card
+        <Card className="col-md-4 mb-4"
           style={{
             width: "20rem",
             height: "25rem",

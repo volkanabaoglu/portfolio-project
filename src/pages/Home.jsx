@@ -15,7 +15,7 @@ const Home = () => {
   };
 
   return (
-    <>
+    <div className="main-page">
       <NavbarComponent />
       <Container className="home-container">
         <Image
@@ -23,8 +23,8 @@ const Home = () => {
           alt="volkanabaoglu"
           roundedCircle
           style={{
-            width: "400px",
-            height: "400px",
+            width: "390px",
+            height: "390px",
             objectFit: "cover",
             borderRadius: "90%", 
             marginBottom: "20px", 
@@ -40,7 +40,7 @@ const Home = () => {
           <p className="developer-title">Junior Web Dev... </p>
         </div>
       </Container>
-    </>
+    </div>
   );
 };
 

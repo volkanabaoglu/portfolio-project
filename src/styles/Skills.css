@@ -1,0 +1,10 @@
+.skills-main{
+    overflow-y: auto;
+    max-height: 100vh;
+}
+
+@media screen and (max-width: 768px) {
+    .my-skills {
+      font-size: 20px;
+    }
+  }

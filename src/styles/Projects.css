@@ -4,3 +4,17 @@
     align-items: center;
     justify-content: center;
 }
+
+.cards-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-y: auto;
+    max-height: 100vh;
+  }
+  
+  .card {
+    width: 100%; 
+    margin-bottom: 20px; 
+  }
+  
